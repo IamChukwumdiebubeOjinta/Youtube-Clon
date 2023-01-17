@@ -1,7 +1,6 @@
 /** @format */
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
 import { Box } from "@mui/material";
 import {
   ChannelDetail,
