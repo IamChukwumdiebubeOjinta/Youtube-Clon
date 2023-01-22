@@ -10,7 +10,7 @@ const Sidebar = ({selected, setSelected}) => (
     direction={"row"}
     sx={{
       overflowY: "auto",
-      height: { sx: "auto", md: "95%" },
+      height: { xs: "auto", md: "95%" },
       flexDirection: { md: "column" },
     }}>
     {categories.map((category) => (
@@ -22,7 +22,10 @@ const Sidebar = ({selected, setSelected}) => (
           color: "white",
         }}
         key={category.name}>
-        <span style={{color: category.name === selected ? 'white' : 'red', marginRight: '15px'}}>{console.log(category.icon)}</span>
+        <span style={{color: category.name === selected ? 'white' : 'red', marginRight: '15px'}}>
+          {/* {console.log(category.icon)} */}
+          
+          </span>
         <span style={{opacity: category.name === selected ? '1' : '0.8'}} >{category.name}</span>
       </button>
     ))}
